@@ -8,8 +8,8 @@ const Home = () => {
 },[])
     const fetchData = async () => {
         await axios
-          .get("http://localhost:4000/api/getemp")
-          .then(res => setEmpData(res.data))
+          .get("https://demobackend-deploy.onrender.com/api/getemp")
+          .then((res) => setEmpData(res.data))
           .catch((err) => {
             console.log(err);
           });
